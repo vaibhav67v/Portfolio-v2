@@ -5,12 +5,13 @@ import Contact from "../sections/Contact";
 
 
 export default function Home() {
-    return (
-        <>
-            <Hero />
-            <About />
-            <Projects/>
-            <Contact />
-        </>
-    );
+	const primaryBgClr = "bg-neutral-900";
+	return (
+		<div className={`${primaryBgClr} min-h-screen`}>
+			<Hero />
+			<About />
+			<Projects/>
+			<Contact />
+		</div>
+	);
 }
