@@ -13,7 +13,7 @@ export default function Header() {
                 Vaibhav | The Programmer
             </div>
             <Navbar />
-            <Button btnText={"Resume"} className={`${resBtnTextClr} ${resBtnBgClr} flex justify-center items-center w-28 h-10 rounded-md font-bold`} />
+            <Button btnText={"Resume"} className={`${resBtnTextClr} ${resBtnBgClr} flex justify-center items-center w-28 h-10 rounded-md font-bold cursor-pointer hover:bg-emerald-200/20 transition-colors duration-300`} />
         </div>
     );
 }
