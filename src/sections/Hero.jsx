@@ -57,24 +57,20 @@ export default function Hero() {
             </div>
 
             {/* hero section profile picture */}
-            <div className="rounded-2xl shadow-[0_0_24px_4px_rgba(167,243,208,0.6)] transition-all hover:shadow-[0_0_24px_6px_rgba(167,243,208,0.6)] duration-500">
+            <div className="rounded-2xl shadow-[0_0_24px_4px_rgba(167,243,208,0.6)] transition-all hover:shadow-[0_0_24px_6px_rgba(167,243,208,0.6)] duration-300">
                 <div
                     className="relative w-lg"
                     onMouseEnter={() => setIsProfileHovered(true)}
                     onMouseLeave={() => setIsProfileHovered(false)}
                 >
-
                     <img
                         src={profile_bw}
                         className={`absolute top-0 left-0 w-full rounded-2xl transition-opacity ${
                             isProfileHovered ? "opacity-0" : "opacity-100"
-                        }`}
+                        } duration-1000`}
                     />
 
-                    <img
-                        src={profile_clr}
-                        className={`w-full rounded-2xl`}
-                    />
+                    <img src={profile_clr} className={`w-full rounded-2xl`} />
                 </div>
             </div>
         </div>
