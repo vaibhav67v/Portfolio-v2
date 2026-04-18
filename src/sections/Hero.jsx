@@ -11,7 +11,7 @@ export default function Hero() {
     return (
         // main container
         <div
-            className={`w-full flex gap-12 py-8 px-16 justify-between text-slate-400 font-['Space_Grotesk']`}
+            className={`w-full flex gap-12 py-8 px-16 justify-between text-slate-400`}
         >
             {/* hero section content */}
             <div className="flex flex-col gap-8 max-w-2/5">
