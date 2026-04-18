@@ -57,7 +57,7 @@ export default function Hero() {
             </div>
 
             {/* hero section profile picture */}
-            <div className="rounded-2xl shadow-[0_0_24px_4px_rgba(167,243,208,0.6)] transition-all hover:shadow-[0_0_24px_6px_rgba(167,243,208,0.6)] duration-300">
+            <div className="rounded-2xl w-lg max-h-128 shadow-[0_0_24px_4px_rgba(167,243,208,0.6)] transition-all hover:shadow-[0_0_24px_6px_rgba(167,243,208,0.6)] duration-300">
                 <div
                     className="relative w-lg"
                     onMouseEnter={() => setIsProfileHovered(true)}
