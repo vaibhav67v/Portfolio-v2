@@ -1,6 +1,5 @@
 import Navbar from "./Navbar";
 import Button from "./Button";
-import "./Header.css";
 
 export default function Header() {
     const resBtnTextClr = 'text-emerald-200';
