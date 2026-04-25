@@ -1,16 +1,55 @@
-# React + Vite
+# 🌐 Portfolio v2.0
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern developer portfolio built with React, showcasing projects, skills, and a fully functional contact system.
 
-Currently, two official plugins are available:
+## 🚀 Live Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- ⚛️ Built with React + Vite
+- 🎨 Clean and responsive UI
+- 📩 Live contact form using EmailJS
+- 🔁 Auto-reply email system
+- ⚡ Smooth scrolling and interactions
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🧠 Tech Stack
 
-## Expanding the ESLint configuration
+- React (Vite)
+- Tailwind CSS
+- EmailJS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🆕 What's New
+
+### v2.0
+- 🔁 Complete rebuild using React
+- 📩 Integrated EmailJS for contact form
+- 🤖 Added auto-reply functionality
+- 🎨 Improved UI and UX
+
+### v1.0
+- 🌐 Static portfolio (HTML, CSS, JavaScript)
+- 📩 Contact form using Formspree
+- 🎨 Basic UI layout
+
+---
+
+## 📌 Future Improvements
+
+- ✨ Animations and micro-interactions
+- 🌙 Dark/Light mode toggle
+- 🧠 Backend integration (Node.js / Express)
+- 📊 Project filtering and sorting
+
+---
+
+## 📬 Contact
+
+If you'd like to connect, feel free to reach out through the contact form on the website.
+
+---
+
+## 🧾 Version
+
+Current version: **v2.0**

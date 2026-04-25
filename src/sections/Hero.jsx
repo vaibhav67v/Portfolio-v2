@@ -43,12 +43,12 @@ export default function Hero() {
                 {/* project and contact link */}
                 <div className="flex gap-2">
                     <Button
-                        btnText={"View my work"}
+                        children={"View my work"}
                         className={`bg-emerald-200 text-emerald-800 font-bold w-48 p-3 text-center rounded-md cursor-pointer hover:bg-emerald-300`}
                     />
 
                     <Button
-                        btnText={"Get In Touch"}
+                        children={"Get In Touch"}
                         className={
                             "text-blue-400 border-blue-400 border rounded-md text-center w-32 p-3 cursor-pointer hover:bg-blue-400/10"
                         }

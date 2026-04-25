@@ -7,3 +7,5 @@ export { default as nodejsIcon } from "../assets/icons/toolkit_icons/nodejs.svg?
 export { default as mysqlIcon } from "../assets/icons/toolkit_icons/mysql.svg?react";
 export { default as expressjsIcon } from "../assets/icons/toolkit_icons/expressjs.svg?react";
 export { default as mongodbIcon } from "../assets/icons/toolkit_icons/mongodb.svg?react";
+export { default as locationIcon } from "../assets/icons/contact_info_icons/location.svg?react";
+export { default as mailIcon } from "../assets/icons/contact_info_icons/mail.svg?react";

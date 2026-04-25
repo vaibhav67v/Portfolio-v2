@@ -1,7 +1,7 @@
-export default function Button({btnText, className}) {
+export default function Button({ children, className, type, onClick, ...props }) {
     return (
-        <div className={className}>
-            {btnText}
-        </div>
+        <button type={type} className={className} {...props}>
+            {children}
+        </button>
     );
 }
