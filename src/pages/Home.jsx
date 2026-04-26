@@ -4,11 +4,9 @@ import Projects from "../sections/Projects";
 import Contact from "../sections/Contact";
 
 export default function Home() {
-    const primaryBgClr = "neutral-900";
-    const primaryTextClr = "slate-400";
     return (
         <div
-            className={`bg-${primaryBgClr} min-h-screen font-['Space_Grotesk']`}
+            className={`bg-background-dark min-h-screen font-['Space_Grotesk'] flex flex-col gap-8`}
         >
             <Hero />
             <About />
@@ -16,7 +14,7 @@ export default function Home() {
             <Contact />
 
             {/* version info */}
-            <div className="mt-10 text-center text-[11px] text-slate-500 opacity-90">
+            <div className="mt-10 text-center font-bold text-[11px] text-text/80">
                 Portfolio <b>v2.0</b> — Built with React, featuring live contact
                 system
             </div>

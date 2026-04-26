@@ -5,30 +5,28 @@ import {useState} from "react";
 
 export default function Hero() {
     const [isProfileHovered, setIsProfileHovered] = useState(false);
-    const availableClr = "bg-emerald-200";
-    const notAvailableClr = "bg-red-400";
 
     return (
         // main container
         <div
-            className={`w-full flex gap-12 py-8 px-16 justify-between text-slate-400`}
+            className={`w-full flex gap-12 py-8 px-16 justify-between text-text`}
         >
             {/* hero section content */}
             <div className="flex flex-col gap-8 max-w-2/5">
                 {/* available or not*/}
                 <div
-                    className={`flex items-center gap-2 text-sm bg-neutral-800 font-bold py-1.5 pl-4 rounded-2xl w-1/2`}
+                    className={`flex items-center gap-2 text-sm text-text-muted bg-background-light font-bold py-1.5 pl-4 rounded-2xl w-1/2`}
                 >
-                    <div className={`h-2 w-2 rounded-xl ${availableClr}`}></div>
+                    <div className={`h-2 w-2 rounded-xl bg-primary`}></div>
                     AVAILABLE FOR NEW PROJECTS
                 </div>
 
                 {/* title text */}
                 <div>
-                    <div className="-mt-0.5 text-6xl font-bold text-white">
+                    <div className="-mt-0.5 text-6xl font-bold text-text">
                         Turning ideas into
                     </div>
-                    <div className="font-bold text-6xl text-emerald-200">
+                    <div className="font-bold text-6xl text-primary/95">
                         real-world web solutions
                     </div>
                 </div>
@@ -44,20 +42,20 @@ export default function Hero() {
                 <div className="flex gap-2">
                     <Button
                         children={"View my work"}
-                        className={`bg-emerald-200 text-emerald-800 font-bold w-48 p-3 text-center rounded-md cursor-pointer hover:bg-emerald-300`}
+                        className={`bg-primary/85 text-black font-bold w-48 p-3 text-center rounded-md cursor-pointer hover:bg-primary/95`}
                     />
 
                     <Button
                         children={"Get In Touch"}
                         className={
-                            "text-blue-400 border-blue-400 border rounded-md text-center w-32 p-3 cursor-pointer hover:bg-blue-400/10"
+                            "text-primary/95 border-primary border-2 rounded-md text-center w-32 p-3 cursor-pointer hover:bg-primary/15"
                         }
                     />
                 </div>
             </div>
 
             {/* hero section profile picture */}
-            <div className="rounded-2xl w-lg max-h-128 shadow-[0_0_24px_4px_rgba(167,243,208,0.6)] transition-all hover:shadow-[0_0_24px_6px_rgba(167,243,208,0.6)] duration-300">
+            <div className="rounded-2xl shadow-glow transition-all hover:shadow-glow-hover duration-300">
                 <div
                     className="relative w-lg"
                     onMouseEnter={() => setIsProfileHovered(true)}

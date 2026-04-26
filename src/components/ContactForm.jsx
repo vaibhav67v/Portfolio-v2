@@ -26,11 +26,11 @@ export default function ContactForm() {
             .send(serviceId, templateId, templateParams, publicKey)
             .then((result) => {
                 console.log("Message sent!", result.text);
-                alert("Message sent successfully 😌");
+                alert("Message sent successfully");
             })
             .catch((error) => {
                 console.log("Error:", error.text);
-                alert("Something went wrong 😢");
+                alert("Something went wrong");
             });
 
         // Reset form after submission
@@ -50,7 +50,7 @@ export default function ContactForm() {
     };
 
     return (
-        <form className={`flex flex-col p-8 gap-4`} onSubmit={handleSubmit}>
+        <form className={`flex flex-col p-8 gap-4 text-text-muted`} onSubmit={handleSubmit}>
             {/* name input */}
             <Input
                 label={"Name"}
@@ -86,7 +86,7 @@ export default function ContactForm() {
             <Button
                 children="Start Conversation"
                 type="submit"
-                className="w-full mt-4 bg-cyan-400/80 text-black py-3 rounded-lg font-medium transition-all duration-200 hover:bg-cyan400 hover:scale-101 hover:shadow-[0_0_20px_rgba(34,211,238,0.5)]"
+                className="w-full mt-4 bg-primary/75 text-black py-3 rounded-lg font-medium transition-all duration-200 hover:bg-primary/85 hover:scale-101 hover:shadow-[0_0_20px_rgba(34,211,238,0.5)]"
             />
         </form>
     );

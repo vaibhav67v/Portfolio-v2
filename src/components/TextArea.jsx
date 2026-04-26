@@ -5,7 +5,7 @@ export default function TextArea({ id, name, label, value, onChange }) {
                 {label}
             </label>
             <textarea
-                className={`bg-neutral-900 resize-none text-sm px-2 py-1 h-32 overflow-y-auto focus:outline-none focus:ring-2 focus:ring-cyan-400/40`}
+                className={`bg-background-dark resize-none text-sm px-2 py-1 h-32 overflow-y-auto focus:outline-none focus:ring-2 focus:ring-primary/35`}
                 id={id}
                 value={value}
                 name={name}

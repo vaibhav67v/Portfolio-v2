@@ -2,12 +2,12 @@ export default function ContactInfo({ icon: Icon, label, value }) {
     const accentColor = "cyan-400";
     return (
         <div className={`flex gap-2 mt-2`}>
-            <div className={`bg-neutral-800 p-4 rounded-lg flex items-center justify-center text-${accentColor}`}>
+            <div className={`bg-background p-4 rounded-lg flex items-center justify-center text-primary/95`}>
                 <Icon />
             </div>
             <div>
-                <div className={`text-slate-500 text-sm`}>{label}</div>
-                <div className={`text-xl`}>{value}</div>
+                <div className={` text-sm`}>{label}</div>
+                <div className={`hover:text-primary/75 text-xl`}>{value}</div>
             </div>
         </div>
     );
