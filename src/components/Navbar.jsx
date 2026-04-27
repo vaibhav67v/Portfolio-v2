@@ -1,16 +1,26 @@
+import Navlink from "./Navlink";
+
 export default function Navbar({ className }) {
     return (
-        <div>
-            <ul
-                className={`h-full flex justify-center items-center gap-8`}
-            >
-                <li className={`text-primary font-bold cursor-pointer`}>
-                    Home
+        <nav className={className}>
+            <ul className={`flex h-full items-center justify-center gap-8`}>
+                <li>
+                    <Navlink
+                        href={"hero"}
+                        children={"Home"}
+                        className={"text-primary"}
+                    />
                 </li>
-                <li className={`cursor-pointer font-bold`}>About</li>
-                <li className={`cursor-pointer font-bold`}>Projects</li>
-                <li className={`cursor-pointer font-bold`}>Contact</li>
+                <li>
+                    <Navlink href={"about"} children={"About"} />
+                </li>
+                <li>
+                    <Navlink href={"projects"} children={"Projects"} />
+                </li>
+                <li>
+                    <Navlink href={"contact"} children={"Contact"} />
+                </li>
             </ul>
-        </div>
+        </nav>
     );
 }

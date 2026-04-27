@@ -5,8 +5,9 @@ import icons from "../lib/icons";
 export default function Contact() {
 
     return (
-        <div
-            className={`flex gap-8 px-16 py-8 text-xl text-text-muted`}
+        <section
+            id="contact"
+            className={`flex scroll-mt-20 gap-8 px-16 py-8 text-xl text-text-muted`}
         >
             {/* contact content */}
             <div className="flex w-3/5 flex-col gap-4">
@@ -42,6 +43,6 @@ export default function Contact() {
             <div className={`w-3/7 rounded-md bg-background`}>
                 <ContactForm />
             </div>
-        </div>
+        </section>
     );
 }

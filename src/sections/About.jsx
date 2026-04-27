@@ -2,8 +2,9 @@ import Toolkit from "../components/Toolkit";
 
 export default function About() {
     return (
-        <div
-            className={`flex justify-between gap-16 px-16 py-8 text-text-muted`}
+        <section
+            id="about"
+            className={`flex scroll-mt-20 justify-between gap-16 px-16 py-8 text-text-muted`}
         >
             {/* about content */}
             <div className="max-w-1/2 text-xl">
@@ -37,6 +38,6 @@ export default function About() {
                     <Toolkit text={"MongoDB"} icon={"mongodb"} />
                 </div>
             </div>
-        </div>
+        </section>
     );
 }

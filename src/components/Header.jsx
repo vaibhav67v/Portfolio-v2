@@ -1,14 +1,26 @@
 import Navbar from "./Navbar";
 import Button from "./Button";
+import icons from "../lib/icons";
 
 export default function Header() {
+    const handleClick = () => {};
+    const OpenMenuIcon = icons.openmenu;
+    const CloseMenuIcon = icons.closemenu;
     return (
-        <div className={`flex justify-between text-text-muted bg-background-dark px-8 py-4 font-['Space_Grotesk']`}>
-            <div className="flex justify-center items-center text-primary/95 text-xl font-bold">
+        <header className={`fixed left-0 top-0 z-50 flex w-full justify-between bg-background-dark/80 px-8 py-4 font-['Space_Grotesk'] text-text-muted backdrop-blur-md`}>
+           
+            <div className="flex items-center justify-center text-sm font-bold text-primary/95 md:text-2xl">
                 Vaibhav | The Programmer
             </div>
-            <Navbar />
-            <Button children={"Resume"} className={`text-primary/95 bg-primary/10 hover:bg-primary/15 flex justify-center items-center w-28 h-10 rounded-md font-bold cursor-pointer transition-colors duration-300`} />
-        </div>
+
+            {/* navbar component */}
+            <Navbar className={"hidden lg:flex"}/>
+            
+            {/* resume download button */}
+            <Button children={"Resume"} className={`hover:bg-primary/15 hidden h-10 w-28 cursor-pointer items-center justify-center rounded-md bg-primary/10 font-bold text-primary/95 transition-colors duration-300 lg:flex`} />
+            
+            {/* open menu button for hamburger menu */}
+            <Button children={<OpenMenuIcon/>} type={"button"} onClick={handleClick} className={`text-primary lg:hidden`} />
+        </header>
     );
 }

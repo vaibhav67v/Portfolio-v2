@@ -5,19 +5,13 @@ import Contact from "../sections/Contact";
 
 export default function Home() {
     return (
-        <div
-            className={`bg-background-dark min-h-screen font-['Space_Grotesk'] flex flex-col gap-8`}
+        <main
+            className={`flex min-h-screen flex-col gap-8 pt-20 font-['Space_Grotesk']`}
         >
             <Hero />
             <About />
             <Projects />
             <Contact />
-
-            {/* version info */}
-            <div className="mt-10 text-center font-bold text-[11px] text-text/80">
-                Portfolio <b>v2.0</b> — Built with React, featuring live contact
-                system
-            </div>
-        </div>
+        </main>
     );
 }
