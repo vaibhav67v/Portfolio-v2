@@ -8,10 +8,13 @@ export default function Header() {
     const CloseMenuIcon = icons.closemenu;
     return (
         <header
-            className={`fixed left-0 top-0 z-50 flex w-full justify-between bg-background-dark/80 px-8 py-4 font-['Space_Grotesk'] text-text-muted backdrop-blur-md`}
+            className={`fixed left-0 top-0 z-50 flex w-full justify-between bg-background-dark/80 px-4 py-4 font-['Space_Grotesk'] text-text-muted backdrop-blur-md lg:px-8`}
         >
-            <div className="flex items-center justify-center text-sm font-bold text-primary/95 md:text-2xl">
-                Vaibhav | The Programmer
+            <div className="flex items-center justify-center text-xl font-bold text-primary/95 lg:text-2xl">
+                <span className="block md:hidden">Vaibhav</span>
+                <span className="hidden md:block">
+                    Vaibhav | The Programmer
+                </span>
             </div>
 
             {/* navbar component */}

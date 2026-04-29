@@ -1,3 +1,5 @@
+import { typography } from "../styles/typography";
+
 export default function Input({
     id,
     name,
@@ -8,10 +10,10 @@ export default function Input({
     onChange,
 }) {
     return (
-        <div className={`flex flex-col gap-2 rounded-md`}>
-            <label htmlFor={id}>{label}</label>
+        <div className={`flex flex-col gap-2`}>
+            <label className= {`${typography.body}`} htmlFor={id}>{label}</label>
             <input
-                className={`bg-background-dark px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-primary/35`}
+                className={`focus:ring-primary/35 rounded-sm bg-background-dark px-2 py-2 text-sm focus:outline-none focus:ring-2`}
                 id={id}
                 name={name}
                 type={type}

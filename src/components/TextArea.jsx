@@ -1,11 +1,13 @@
+import { typography } from "../styles/typography";
+
 export default function TextArea({ id, name, label, value, onChange }) {
     return (
         <div className={`flex flex-col gap-2`}>
-            <label className={`text-`} htmlFor={id}>
+            <label className= {`${typography.body}`} htmlFor={id}>
                 {label}
             </label>
             <textarea
-                className={`bg-background-dark resize-none text-sm px-2 py-1 h-32 overflow-y-auto focus:outline-none focus:ring-2 focus:ring-primary/35`}
+                className={`focus:ring-primary/35 h-32 resize-none overflow-y-auto rounded-sm bg-background-dark px-2 py-1 text-sm focus:outline-none focus:ring-2`}
                 id={id}
                 value={value}
                 name={name}

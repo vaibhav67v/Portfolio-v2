@@ -12,7 +12,7 @@ export default function Button({
                 href={href}
                 target={target}
                 rel={target === "_blank" ? "noopener noreferrer" : ""}
-                className={`inline-flex items-center justify-center ${className}`}
+                className={`flex items-center justify-center ${className}`}
                 {...props}
             >
                 {children}
@@ -23,7 +23,7 @@ export default function Button({
         <button
             type={type}
             onClick={onClick}
-            className={`inline-flex items-center justify-center ${className}`}
+            className={`flex items-center justify-center ${className}`}
             {...props}
         >
             {children}

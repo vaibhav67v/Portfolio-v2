@@ -1,7 +1,0 @@
-fix the header
-make it responsive
-make the navbars, buttons responsive
-fix the profile picture size
-implement the hamburger menu
-add/fix animations
-add shadow effects

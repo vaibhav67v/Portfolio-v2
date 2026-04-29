@@ -50,7 +50,7 @@ export default function ContactForm() {
     };
 
     return (
-        <form className={`flex flex-col p-8 gap-4 text-text-muted`} onSubmit={handleSubmit}>
+        <form className={`flex flex-col gap-4 px-4 py-3 text-text lg:px-7 lg:py-6`} onSubmit={handleSubmit}>
             {/* name input */}
             <Input
                 label={"Name"}
@@ -86,7 +86,7 @@ export default function ContactForm() {
             <Button
                 children="Start Conversation"
                 type="submit"
-                className="w-full mt-4 bg-primary/75 text-black py-3 rounded-lg font-medium transition-all duration-200 hover:bg-primary/85 hover:scale-101 hover:shadow-[0_0_20px_rgba(34,211,238,0.5)]"
+                className="hover:bg-primary/85 hover:scale-101 mt-4 w-full rounded-lg bg-primary/75 py-3 font-medium text-black transition-all duration-200 hover:shadow-[0_0_20px_rgba(34,211,238,0.5)]"
             />
         </form>
     );

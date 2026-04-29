@@ -1,4 +1,4 @@
-# 🌐 Portfolio v2.0
+# 🌐 Portfolio v2.2
 
 A modern developer portfolio built with React, showcasing projects, skills, and a fully functional contact system.
 
@@ -9,6 +9,7 @@ A modern developer portfolio built with React, showcasing projects, skills, and 
 - 📩 Live contact form using EmailJS
 - 🔁 Auto-reply email system
 - ⚡ Smooth scrolling and interactions
+- 📱 Fully responsive design across devices
 
 ---
 
@@ -21,6 +22,16 @@ A modern developer portfolio built with React, showcasing projects, skills, and 
 ---
 
 ## 🆕 What's New
+
+### v2.2
+- 📱 Improved responsiveness across all sections
+- 🔤 Adaptive typography for different screen sizes
+- 🖼️ Optimized hero section layout for mobile and desktop
+- 📐 Better spacing, alignment, and layout handling
+
+### v2.1
+- 🔘 Responsive buttons and navigation links
+- 🎯 Improved interaction consistency
 
 ### v2.0
 - 🔁 Complete rebuild using React
@@ -41,6 +52,7 @@ A modern developer portfolio built with React, showcasing projects, skills, and 
 - 🌙 Dark/Light mode toggle
 - 🧠 Backend integration (Node.js / Express)
 - 📊 Project filtering and sorting
+- 🍔 Responsive hamburger menu
 
 ---
 
@@ -52,4 +64,4 @@ If you'd like to connect, feel free to reach out through the contact form on the
 
 ## 🧾 Version
 
-Current version: **v2.0**
+Current version: **v2.2**

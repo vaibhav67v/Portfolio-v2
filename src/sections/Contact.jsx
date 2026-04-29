@@ -1,27 +1,31 @@
 import ContactInfo from "../components/ContactInfo";
 import ContactForm from "../components/ContactForm";
 import icons from "../lib/icons";
+import { typography } from "../styles/typography";
 
 export default function Contact() {
 
     return (
         <section
             id="contact"
-            className={`flex scroll-mt-20 gap-8 px-16 py-8 text-xl text-text-muted`}
+            className={`flex scroll-mt-20 flex-col items-center gap-8 py-8 lg:flex-row lg:items-start lg:justify-between`}
         >
             {/* contact content */}
-            <div className="flex w-3/5 flex-col gap-4">
+            <div className={`lg:w-3xl flex flex-col gap-4`}>
+            
                 {/* contact title */}
-                <div className={`text-4xl font-bold text-text`}>
+                <div className={`text-4xl font-bold text-text ${typography.h2}`}>
                     Let's build something <br />
                     <span className={`text-primary/95`}>Meaningful</span>.
                 </div>
+                
                 {/* contact sub text */}
-                <div>
+                <div className={`${typography.body}`}>
                     Got an idea, a project, or just curious about what I do?{" "}
                     <br />
                     Let’s connect and build something that actually matters.
                 </div>
+                
                 {/* contact info */}
                 
                 {/* mail info */}
@@ -40,7 +44,7 @@ export default function Contact() {
             </div>
 
             {/* contact form */}
-            <div className={`w-3/7 rounded-md bg-background`}>
+            <div className={`lg:w-xl w-75 rounded-xl bg-background`}>
                 <ContactForm />
             </div>
         </section>
