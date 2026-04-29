@@ -4,4 +4,5 @@ fix the profile picture size
 implement the hamburger menu
 add/fix animations
 add shadow effects
-add typing animation to the name in header that toggles between "Vaibhav", "The Programmer" and may be some other things as well.
+add typing animation to the name in header that toggles between "Vaibhav", "The Programmer" and may be some other things as well
+make the profile picture colored for mobile view
