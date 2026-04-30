@@ -2,8 +2,11 @@ import Navbar from "./Navbar";
 import Button from "./Button";
 import icons from "../lib/icons";
 
-export default function Header() {
-    const handleClick = () => {};
+export default function Header({setIsMenuOpen}) {
+    const handleClick = () => {
+        setIsMenuOpen(true);
+    };
+    
     const OpenMenuIcon = icons.openmenu;
     const CloseMenuIcon = icons.closemenu;
     return (
@@ -17,24 +20,26 @@ export default function Header() {
                 </span>
             </div>
 
-            {/* navbar component */}
-            <Navbar className={"hidden lg:flex"} />
+            <div className="flex gap-6">
+                {/* navbar component */}
+                <Navbar className={"hidden lg:flex"} />
 
-            {/* resume download button */}
-            <Button
-                href="https://drive.google.com/file/d/1aKFdzIZy3DO_chLKztYngyEPrxe_Y97w/view"
-                target="_blank"
-                children={"Resume"}
-                className={`hover:bg-primary/15 hidden h-10 w-28 cursor-pointer items-center justify-center rounded-md bg-primary/10 font-bold text-primary/95 transition-colors duration-300 lg:flex`}
-            />
+                {/* resume download button */}
+                <Button
+                    href="https://drive.google.com/file/d/1aKFdzIZy3DO_chLKztYngyEPrxe_Y97w/view"
+                    target="_blank"
+                    children={"Resume"}
+                    className={`hover:bg-primary/15 hidden h-10 w-28 cursor-pointer items-center justify-center rounded-md bg-primary/10 font-bold text-primary/95 transition-colors duration-300 sm:flex`}
+                />
 
-            {/* open menu button for hamburger menu */}
-            <Button
-                children={<OpenMenuIcon />}
-                type={"button"}
-                onClick={handleClick}
-                className={`text-primary lg:hidden`}
-            />
+                {/* open menu button for hamburger menu */}
+                <Button
+                    children={<OpenMenuIcon />}
+                    type={"button"}
+                    onClick={handleClick}
+                    className={`cursor-pointer text-primary lg:hidden`}
+                />
+            </div>
         </header>
     );
 }
