@@ -11,8 +11,67 @@ export default function ContactForm() {
         message: "",
     });
 
+    // form validation logic before sending the message
+    const [errors, setErrors] = useState({});
+    
+    const validationConfig = {
+        name: [
+            { required: true, message: "Please enter a name !" },
+            {
+                minLength: 3,
+                message: "Name should be at least 3 characters long !",
+            },
+        ],
+        email: [
+            { required: true, message: "Please enter an email !" },
+            {
+                pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                message: "Please enter a valid email !",
+            },
+        ],
+        message: [
+            { required: true, message: "Please enter a message !" },
+            {
+                minLength: 10,
+                message: "Message should be at least 10 characters long !",
+            },
+        ],
+    };
+
+    const validateForm = (formData) => {
+        const newErrors = {};
+
+        Object.entries(formData).forEach(([key, value]) => {
+            validationConfig[key].some((rule) => {
+                if (rule.required && !value.trim()) {
+                    newErrors[key] = rule.message;
+                    return true;
+                }
+
+                if (rule.minLength && value.length < rule.minLength) {
+                    newErrors[key] = rule.message;
+                    return true;
+                }
+
+                if (rule.pattern && !rule.pattern.test(value)) {
+                    newErrors[key] = rule.message;
+                    return true;
+                }
+            });
+        });
+
+        setErrors(newErrors);
+        return newErrors;
+    };
+
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        // validate the form before sending the message
+        const validationResult = validateForm(formData);
+        if (Object.keys(validationResult).length) return; // stop if error exists
+
+        // setup the email js parameters
         const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
         const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
         const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
@@ -41,7 +100,11 @@ export default function ContactForm() {
         });
     };
 
+    // function to handle any change in the form
     const handleChange = (e) => {
+        // hide the error message when the user starts typing
+        setErrors({});
+        
         const { name, value } = e.target;
         setFormData((prevState) => ({
             ...prevState,
@@ -50,7 +113,10 @@ export default function ContactForm() {
     };
 
     return (
-        <form className={`flex flex-col gap-4 px-4 py-3 text-text lg:px-7 lg:py-6`} onSubmit={handleSubmit}>
+        <form
+            className={`flex flex-col gap-8 px-4 py-3 text-text lg:px-7 lg:py-6`}
+            onSubmit={handleSubmit}
+        >
             {/* name input */}
             <Input
                 label={"Name"}
@@ -60,6 +126,7 @@ export default function ContactForm() {
                 name={"name"}
                 placeholderText={"Enter your name"}
                 onChange={handleChange}
+                error={errors.name}
             />
 
             {/* name input */}
@@ -71,6 +138,7 @@ export default function ContactForm() {
                 name={"email"}
                 placeholderText={"yourname@example.com"}
                 onChange={handleChange}
+                error={errors.email}
             />
 
             {/* message input */}
@@ -80,6 +148,7 @@ export default function ContactForm() {
                 name={"message"}
                 onChange={handleChange}
                 value={formData.message}
+                error={errors.message}
             />
 
             {/* submit button */}
