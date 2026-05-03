@@ -26,7 +26,7 @@ export default function Header({setIsMenuOpen}) {
 
                 {/* resume download button */}
                 <Button
-                    href="../../public/resume/Vaibhav_Resume.pdf"
+                    href="/resume/Vaibhav_Resume.pdf"
                     download
                     children={"Resume"}
                     className="hover:scale-101 shadow-depth hover:bg-accent/15 hidden h-10 w-28 cursor-pointer items-center justify-center rounded-md bg-background-light/25 font-bold text-accent transition-colors duration-300 sm:flex sm:text-primary/95 lg:text-accent"

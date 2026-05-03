@@ -60,7 +60,7 @@ export default function HamMenu({ onClose }) {
 
                 {/* resume download button */}
                 <Button
-                    href="../../public/resume/Vaibhav_Resume.pdf"
+                    href="resume/Vaibhav_Resume.pdf"
                     download
                     children={"Resume"}
                     className={`shadow-depth h-10 w-28 cursor-pointer items-center justify-center rounded-md bg-background-light/25 font-bold text-accent/95 transition-colors duration-300`}
