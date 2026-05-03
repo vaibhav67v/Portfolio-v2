@@ -114,7 +114,7 @@ export default function ContactForm() {
 
     return (
         <form
-            className={`flex flex-col gap-8 px-4 py-3 text-text lg:px-7 lg:py-6`}
+            className={`flex flex-col gap-8 px-4 py-3 text-text lg:gap-10 lg:px-7 lg:py-6`}
             onSubmit={handleSubmit}
         >
             {/* name input */}
@@ -155,7 +155,7 @@ export default function ContactForm() {
             <Button
                 children="Start Conversation"
                 type="submit"
-                className="hover:bg-primary/85 hover:scale-101 mt-4 w-full rounded-lg bg-primary/75 py-3 font-medium text-black transition-all duration-200 hover:shadow-[0_0_20px_rgba(34,211,238,0.5)]"
+                className="shadow-depth hover:bg-primary/85 mt-4 w-full rounded-lg bg-primary/75 py-3 font-medium text-black hover:shadow-glow-hover"
             />
         </form>
     );

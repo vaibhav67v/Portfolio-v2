@@ -17,13 +17,13 @@ export default function HamMenu({ onClose }) {
             />
 
             {/* MENU PANEL */}
-            <div className="h-90 relative z-50 mt-5 flex w-80 flex-col items-center gap-10 rounded-xl bg-background p-6">
+            <div className="h-90 w-70 shadow-depth relative z-50 mt-5 flex flex-col items-center gap-10 rounded-xl bg-background p-6">
                 <div className="flex w-full justify-end">
                     <Button
                         children={<CloseMenuIcon />}
                         type={"button"}
                         onClick={handleClick}
-                        className={`cursor-pointer text-primary lg:hidden`}
+                        className="shadow-depth h-10 w-10 cursor-pointer rounded-md text-primary/95 lg:hidden"
                     />
                 </div>
 
@@ -60,10 +60,10 @@ export default function HamMenu({ onClose }) {
 
                 {/* resume download button */}
                 <Button
-                    href="https://drive.google.com/file/d/1aKFdzIZy3DO_chLKztYngyEPrxe_Y97w/view"
-                    target="_blank"
+                    href="../../public/resume/Vaibhav_Resume.pdf"
+                    download
                     children={"Resume"}
-                    className={`hover:bg-primary/15 h-10 w-28 cursor-pointer items-center justify-center rounded-md bg-primary/10 font-bold text-primary/95 transition-colors duration-300`}
+                    className={`shadow-depth h-10 w-28 cursor-pointer items-center justify-center rounded-md bg-background-light/25 font-bold text-accent/95 transition-colors duration-300`}
                 />
             </div>
         </div>

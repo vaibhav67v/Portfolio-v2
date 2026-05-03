@@ -14,7 +14,7 @@ export default function Input({
         <div className={`relative flex flex-col gap-2`}>
             <label className= {`${typography.body}`} htmlFor={id}>{label}</label>
             <input
-                className={`focus:ring-primary/35 rounded-sm bg-background-dark px-2 py-2 text-sm focus:outline-none focus:ring-2`}
+                className="shadow-input focus:shadow-input-focus rounded-sm bg-background-dark px-2 py-2 text-sm focus:outline-none"
                 id={id}
                 name={name}
                 type={type}
@@ -23,7 +23,7 @@ export default function Input({
                 onChange={onChange}
             />
 
-            <p className="absolute top-full mt-1 text-xs text-secondary/95">{error}</p>
+            <p className="absolute top-full mt-1 text-xs italic text-error/95 md:text-sm">{error}</p>
         </div>
     );
 }

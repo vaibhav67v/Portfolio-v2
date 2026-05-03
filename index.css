@@ -4,24 +4,25 @@
 /* LIGHT THEME (default) */
 :root {
     --color-primary: 188 86% 53%;
-    --color-secondary: 60 100% 20%;
+    --color-accent: 60 100% 20%;
     --color-bg: 0 0% 100%;
     --color-bg-light: 0 0% 95%;
     --color-text-muted: 0 0% 10%;
     --color-text: 0 0% 05%;
-}
+    --color-error: 0 84% 60%;   /* red */
+    --color-success: 142 70% 45%; /* green */
+}  
 
 /* DARK THEME */
 .dark {
-    --color-primary: 188 86% 53%;
-    --color-secondary: 60 100% 40%;
+    --color-primary: 200 100% 50%;
+    --color-primary-light: 200 100% 65%;
+    --color-accent: 20 100% 50%;
     --color-bg-dark: 0 0% 5%;
     --color-bg: 0 0% 10%;
     --color-bg-light: 0 0% 20%;
     --color-text-muted: 0 0% 60%;
     --color-text: 0 0% 95%;
+    --color-error: 0 84% 60%;   /* red */
+    --color-success: 142 70% 45%; /* green */
 }
-
-/* .dark {
-    background-color: hsl(0, 0%, 8%);
-} */

@@ -7,14 +7,14 @@ export default function TextArea({ id, name, label, value, onChange, error }) {
                 {label}
             </label>
             <textarea
-                className={`focus:ring-primary/35 h-32 resize-none overflow-y-auto rounded-sm bg-background-dark px-2 py-1 text-sm focus:outline-none focus:ring-2`}
+                className={`shadow-input focus:shadow-input-focus h-32 resize-none overflow-y-auto rounded-sm bg-background-dark px-2 py-2 text-sm focus:outline-none`}
                 id={id}
                 value={value}
                 name={name}
                 onChange={onChange}
 				placeholder="What’s on your mind?"
             />
-            <p className="absolute top-full mt-1 text-xs font-bold text-secondary/95">{error}</p>
+            <p className="absolute top-full mt-1 text-sm italic text-error/95">{error}</p>
         </div>
     );
 }

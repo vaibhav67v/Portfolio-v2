@@ -20,16 +20,16 @@ export default function Header({setIsMenuOpen}) {
                 </span>
             </div>
 
-            <div className="flex gap-6">
+            <div className="flex items-center gap-6">
                 {/* navbar component */}
                 <Navbar className={"hidden lg:flex"} />
 
                 {/* resume download button */}
                 <Button
-                    href="https://drive.google.com/file/d/1aKFdzIZy3DO_chLKztYngyEPrxe_Y97w/view"
-                    target="_blank"
+                    href="../../public/resume/Vaibhav_Resume.pdf"
+                    download
                     children={"Resume"}
-                    className={`hover:bg-primary/15 hidden h-10 w-28 cursor-pointer items-center justify-center rounded-md bg-primary/10 font-bold text-primary/95 transition-colors duration-300 sm:flex`}
+                    className="hover:scale-101 shadow-depth hover:bg-accent/15 hidden h-10 w-28 cursor-pointer items-center justify-center rounded-md bg-background-light/25 font-bold text-accent transition-colors duration-300 sm:flex sm:text-primary/95 lg:text-accent"
                 />
 
                 {/* open menu button for hamburger menu */}
@@ -37,7 +37,7 @@ export default function Header({setIsMenuOpen}) {
                     children={<OpenMenuIcon />}
                     type={"button"}
                     onClick={handleClick}
-                    className={`cursor-pointer text-primary lg:hidden`}
+                    className="shadow-depth h-10 w-10 cursor-pointer rounded-md text-primary/95 lg:hidden"
                 />
             </div>
         </header>

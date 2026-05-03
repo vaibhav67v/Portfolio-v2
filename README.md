@@ -1,67 +1,70 @@
-# 🌐 Portfolio v2.2
+# Portfolio
 
 A modern developer portfolio built with React, showcasing projects, skills, and a fully functional contact system.
 
-## 🚀 Live Features
+## Features
 
-- ⚛️ Built with React + Vite
-- 🎨 Clean and responsive UI
-- 📩 Live contact form using EmailJS
-- 🔁 Auto-reply email system
-- ⚡ Smooth scrolling and interactions
-- 📱 Fully responsive design across devices
+- Built with React and Vite
+- Contact form powered by EmailJS with auto-reply functionality
+- Clean and responsive design across devices
+- Responsive hamburger menu for mobile navigation
 
 ---
 
-## 🧠 Tech Stack
+## Tech Stack
 
-- React (Vite)
+- React + Vite
 - Tailwind CSS
 - EmailJS
 
 ---
 
-## 🆕 What's New
+## What's New
+
+### v2.3
+- Added a responsive hamburger menu for mobile navigation
+- Added subtle animations and improved visual depth
+- Enhanced overall UI/UX consistency
+- Removed hover-dependent profile picture color effect for better visual clarity
 
 ### v2.2
-- 📱 Improved responsiveness across all sections
-- 🔤 Adaptive typography for different screen sizes
-- 🖼️ Optimized hero section layout for mobile and desktop
-- 📐 Better spacing, alignment, and layout handling
+- Improved responsiveness across all sections
+- Adaptive typography for different screen sizes
+- Optimized hero section layout for mobile and desktop
+- Better spacing, alignment, and layout handling
 
 ### v2.1
-- 🔘 Responsive buttons and navigation links
-- 🎯 Improved interaction consistency
+- Responsive buttons and navigation links
+- Improved interaction consistency
 
 ### v2.0
-- 🔁 Complete rebuild using React
-- 📩 Integrated EmailJS for contact form
-- 🤖 Added auto-reply functionality
-- 🎨 Improved UI and UX
+- Complete rebuild using React
+- Integrated EmailJS for contact form
+- Added auto-reply functionality
+- Improved UI and UX
 
 ### v1.0
-- 🌐 Static portfolio (HTML, CSS, JavaScript)
-- 📩 Contact form using Formspree
-- 🎨 Basic UI layout
+- Static portfolio (HTML, CSS, JavaScript)
+- Contact form using Formspree
+- Basic UI layout
 
 ---
 
-## 📌 Future Improvements
+## Future Improvements
 
-- ✨ Animations and micro-interactions
-- 🌙 Dark/Light mode toggle
-- 🧠 Backend integration (Node.js / Express)
-- 📊 Project filtering and sorting
-- 🍔 Responsive hamburger menu
-
----
-
-## 📬 Contact
-
-If you'd like to connect, feel free to reach out through the contact form on the website.
+- Add projects to the Projects section
+- Implement dark/light mode toggle
+- Backend integration (Node.js / Express)
+- Enhance animations and micro-interactions
 
 ---
 
-## 🧾 Version
+## Contact
 
-Current version: **v2.2**
+If you'd like to connect, feel free to reach out via the contact form on the website.
+
+---
+
+## Version
+
+Current version: **v2.3**

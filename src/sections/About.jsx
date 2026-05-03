@@ -9,7 +9,7 @@ export default function About() {
         >
             {/* about content */}
             <div className="flex w-full flex-col gap-4 lg:w-1/2">
-                <div className={`${typography.h2} font-bold text-text`}>
+                <div className={`${typography.h2} font-bold text-text/95`}>
                     Building with Purpose
                 </div>
                 <div className={`h-1.5 w-12 bg-primary/95 md:w-16 lg:w-20`}></div>
@@ -20,8 +20,8 @@ export default function About() {
             </div>
 
             {/* technical toolkit container */}
-            <div className="w-70 flex flex-col items-center rounded-xl bg-background p-6 lg:w-auto">
-                <div className={`mb-6 text-2xl font-bold text-text`}>Technical Toolkit</div>
+            <div className="w-70 shadow-depth flex flex-col items-center rounded-xl bg-background p-6 lg:w-auto">
+                <div className={`mb-6 text-2xl font-bold text-text/95`}>Technical Toolkit</div>
                 <div className="grid grid-cols-3 gap-x-12 gap-y-6 p-2 lg:gap-x-20">
                     <Toolkit text={"HTML"} icon={"html"} />
                     <Toolkit text={"CSS"} icon={"css"} />

@@ -1,7 +1,7 @@
 export default function ContactInfo({ icon: Icon, label, value }) {
     return (
         <div className={`mt-2 flex items-center gap-2`}>
-            <div className={`flex items-center justify-center rounded-lg bg-background p-4 text-primary/95`}>
+            <div className={`shadow-depth flex items-center justify-center rounded-lg bg-background p-4 text-primary/95`}>
                 <Icon />
             </div>
             <div>
