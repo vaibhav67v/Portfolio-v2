@@ -26,6 +26,8 @@ A modern developer portfolio built with React, showcasing projects, skills, and 
 - Added subtle animations and improved visual depth
 - Enhanced overall UI/UX consistency
 - Removed hover-dependent profile picture color effect for better visual clarity
+- Improved accessibility (ARIA labels, better link visibility, semantic fixes)
+- Added SEO enhancements (meta description, Open Graph tags, robots.txt)
 
 ### v2.2
 - Improved responsiveness across all sections

@@ -29,15 +29,16 @@ export default function Header({setIsMenuOpen}) {
                     href="/resume/Vaibhav_Resume.pdf"
                     download
                     children={"Resume"}
-                    className="hover:scale-101 shadow-depth hover:bg-accent/15 hidden h-10 w-28 cursor-pointer items-center justify-center rounded-md bg-background-light/25 font-bold text-accent transition-colors duration-300 sm:flex sm:text-primary/95 lg:text-accent"
+                    className="hover:scale-101 hover:bg-accent/15 hidden h-10 w-28 cursor-pointer items-center justify-center rounded-md bg-background-light/25 font-bold text-accent shadow-depth transition-colors duration-300 sm:flex sm:text-primary/95 lg:text-accent"
                 />
 
                 {/* open menu button for hamburger menu */}
                 <Button
                     children={<OpenMenuIcon />}
+                    aria-label="Open menu"
                     type={"button"}
                     onClick={handleClick}
-                    className="shadow-depth h-10 w-10 cursor-pointer rounded-md text-primary/95 lg:hidden"
+                    className="h-10 w-10 cursor-pointer rounded-md text-primary/95 shadow-depth lg:hidden"
                 />
             </div>
         </header>

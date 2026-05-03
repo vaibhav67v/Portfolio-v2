@@ -17,13 +17,14 @@ export default function HamMenu({ onClose }) {
             />
 
             {/* MENU PANEL */}
-            <div className="h-90 w-70 shadow-depth relative z-50 mt-5 flex flex-col items-center gap-10 rounded-xl bg-background p-6">
+            <div className="h-90 w-70 relative z-50 mt-5 flex flex-col items-center gap-10 rounded-xl bg-background p-6 shadow-depth">
                 <div className="flex w-full justify-end">
                     <Button
                         children={<CloseMenuIcon />}
                         type={"button"}
                         onClick={handleClick}
-                        className="shadow-depth h-10 w-10 cursor-pointer rounded-md text-primary/95 lg:hidden"
+                        className="h-10 w-10 cursor-pointer rounded-md text-primary/95 shadow-depth lg:hidden"
+                        aria-label="Close menu"
                     />
                 </div>
 
@@ -63,7 +64,7 @@ export default function HamMenu({ onClose }) {
                     href="resume/Vaibhav_Resume.pdf"
                     download
                     children={"Resume"}
-                    className={`shadow-depth h-10 w-28 cursor-pointer items-center justify-center rounded-md bg-background-light/25 font-bold text-accent/95 transition-colors duration-300`}
+                    className={`h-10 w-28 cursor-pointer items-center justify-center rounded-md bg-background-light/25 font-bold text-accent/95 shadow-depth transition-colors duration-300`}
                 />
             </div>
         </div>
