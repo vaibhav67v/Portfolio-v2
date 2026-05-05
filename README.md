@@ -15,6 +15,8 @@ A modern developer portfolio built with React, showcasing projects, skills, and 
 ### v2.4
 - Implemented dark mode
 - Added projects section (with mini projects link)
+- Improved accessibility (ARIA labels, better link visibility, semantic fixes)
+- Added SEO enhancements (meta description, Open Graph tags, robots.txt)
 - Improved overall structure and UX
 
 ### v2.3
@@ -22,8 +24,6 @@ A modern developer portfolio built with React, showcasing projects, skills, and 
 - Added subtle animations and improved visual depth
 - Enhanced overall UI/UX consistency
 - Removed hover-dependent profile picture color effect for better visual clarity
-- Improved accessibility (ARIA labels, better link visibility, semantic fixes)
-- Added SEO enhancements (meta description, Open Graph tags, robots.txt)
 
 ### v2.2
 - Improved responsiveness across all sections
@@ -54,11 +54,6 @@ A modern developer portfolio built with React, showcasing projects, skills, and 
 - Implement dark/light mode toggle
 - Backend integration (Node.js / Express)
 - Enhance animations and micro-interactions
-
-
-## Contact
-
-If you'd like to connect, feel free to reach out via the contact form on the website.
 
 
 ## Tech Stack
