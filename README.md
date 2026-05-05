@@ -9,15 +9,6 @@ A modern developer portfolio built with React, showcasing projects, skills, and 
 - Clean and responsive design across devices
 - Responsive hamburger menu for mobile navigation
 
----
-
-## Tech Stack
-
-- React + Vite
-- Tailwind CSS
-- EmailJS
-
----
 
 ## What's New
 
@@ -50,7 +41,7 @@ A modern developer portfolio built with React, showcasing projects, skills, and 
 - Contact form using Formspree
 - Basic UI layout
 
----
+
 
 ## Future Improvements
 
@@ -59,13 +50,18 @@ A modern developer portfolio built with React, showcasing projects, skills, and 
 - Backend integration (Node.js / Express)
 - Enhance animations and micro-interactions
 
----
 
 ## Contact
 
 If you'd like to connect, feel free to reach out via the contact form on the website.
 
----
+
+## Tech Stack
+
+- React + Vite
+- Tailwind CSS
+- EmailJS
+
 
 ## Version
 
