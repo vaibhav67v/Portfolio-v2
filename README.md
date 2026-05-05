@@ -70,4 +70,4 @@ If you'd like to connect, feel free to reach out via the contact form on the web
 
 ## Version
 
-Current version: **v2.3**
+Current version: **v2.4**
