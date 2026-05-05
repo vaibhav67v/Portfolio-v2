@@ -2,12 +2,12 @@ export default function Footer() {
     return (
         /* version info */
         <footer className="ml-8 mt-8 pb-2 text-left text-[11px] font-bold text-text-muted lg:ml-16">
-            Portfolio <b>v2.3</b> -{" "}
+            Portfolio <b>v2.4</b> -{" "}
             <a
                 className="border-b border-accent font-semibold text-accent hover:border-transparent"
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://github.com/vaibhav67v/Portfolio-v2/blob/main/README.md"
+                href="https://github.com/vaibhav67v/Portfolio-v2/blob/main/README.md#whats-new"
             >
                 What's new?
             </a>
