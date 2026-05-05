@@ -12,6 +12,11 @@ A modern developer portfolio built with React, showcasing projects, skills, and 
 
 ## What's New
 
+### v2.4
+- Implemented dark mode
+- Added projects section (with mini projects link)
+- Improved overall structure and UX
+
 ### v2.3
 - Added a responsive hamburger menu for mobile navigation
 - Added subtle animations and improved visual depth
