@@ -1,12 +1,12 @@
 export default function ContactInfo({ icon: Icon, label, value }) {
     return (
-        <div className={`mt-2 flex items-center gap-2`}>
-            <div className={`shadow-depth flex items-center justify-center rounded-lg bg-background p-4 text-primary/95`}>
+        <div className="mt-2 flex items-center gap-2">
+            <div className="bg-bg flex h-10 w-10 items-center justify-center rounded-lg text-primary/95 shadow-depth lg:h-12 lg:w-12">
                 <Icon />
             </div>
             <div>
                 <div className={`text-xs lg:text-sm`}>{label}</div>
-                <div className={`text-sm transition-colors duration-300 hover:text-primary/75 lg:text-xl`}>{value}</div>
+                <div className={`cursor-default text-sm transition-colors duration-300 hover:text-accent lg:text-xl`}>{value}</div>
             </div>
         </div>
     );

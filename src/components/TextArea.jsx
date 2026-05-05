@@ -1,20 +1,20 @@
 import { typography } from "../styles/typography";
 
-export default function TextArea({ id, name, label, value, onChange, error }) {
+export default function TextArea({ id, name, label, value, onChange, error, className }) {
     return (
-        <div className={`relative flex flex-col gap-2`}>
+        <div className={className}>
             <label className= {`${typography.body}`} htmlFor={id}>
                 {label}
             </label>
             <textarea
-                className={`shadow-input focus:shadow-input-focus h-32 resize-none overflow-y-auto rounded-sm bg-background-dark px-2 py-2 text-sm focus:outline-none`}
+                className={`bg-bg-dark h-32 resize-none overflow-y-auto rounded-sm px-2 py-2 text-sm shadow-input focus:shadow-input-focus focus:outline-none`}
                 id={id}
                 value={value}
-                name={name}
+                name={name} 
                 onChange={onChange}
 				placeholder="What’s on your mind?"
             />
-            <p className="absolute top-full mt-1 text-sm italic text-error/95">{error}</p>
+            <p className="absolute top-full mt-1 text-xs italic text-error/95">{error}</p>
         </div>
     );
 }

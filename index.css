@@ -3,26 +3,38 @@
 
 /* LIGHT THEME (default) */
 :root {
-    --color-primary: 188 86% 53%;
-    --color-accent: 60 100% 20%;
-    --color-bg: 0 0% 100%;
-    --color-bg-light: 0 0% 95%;
-    --color-text-muted: 0 0% 10%;
-    --color-text: 0 0% 05%;
-    --color-error: 0 84% 60%;   /* red */
-    --color-success: 142 70% 45%; /* green */
-}  
+    --color-primary: 200 100% 40%;
+    --color-primary-light: 200 100% 20%;
+    --color-accent: 20 90% 40%;
+
+    --color-bg-dark: 210 40% 85%;
+    --color-bg: 210 40% 90%;
+    --color-bg-light: 210 40% 95%;
+
+    --color-text: 0 0% 5%;
+    --color-text-muted: 0 0% 30%;
+
+    --color-error: 0 75% 55%;
+    --color-success: 142 65% 38%;
+
+    --color-border: 210 20% 80%
+}
 
 /* DARK THEME */
 .dark {
     --color-primary: 200 100% 50%;
-    --color-primary-light: 200 100% 65%;
+    --color-primary-light: 200 100% 20%;
     --color-accent: 20 100% 50%;
+
     --color-bg-dark: 0 0% 5%;
     --color-bg: 0 0% 10%;
-    --color-bg-light: 0 0% 20%;
-    --color-text-muted: 0 0% 60%;
+    --color-bg-light: 0 0% 15%;
+
     --color-text: 0 0% 95%;
-    --color-error: 0 84% 60%;   /* red */
-    --color-success: 142 70% 45%; /* green */
+    --color-text-muted: 0 0% 70%;
+
+    --color-error: 0 84% 60%;
+    --color-success: 142 70% 45%;
+
+    --color-border: 0 0% 10%
 }

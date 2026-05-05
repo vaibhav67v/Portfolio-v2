@@ -8,13 +8,14 @@ export default function Input({
     type,
     placeholderText,
     onChange,
-    error
+    error,
+    className
 }) {
     return (
-        <div className={`relative flex flex-col gap-2`}>
+        <div className={className}>
             <label className= {`${typography.body}`} htmlFor={id}>{label}</label>
             <input
-                className="shadow-input focus:shadow-input-focus rounded-sm bg-background-dark px-2 py-2 text-sm focus:outline-none"
+                className="bg-bg-dark rounded-sm px-2 py-2 text-sm shadow-input focus:shadow-input-focus focus:outline-none"
                 id={id}
                 name={name}
                 type={type}

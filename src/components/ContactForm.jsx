@@ -127,6 +127,7 @@ export default function ContactForm() {
                 placeholderText={"Enter your name"}
                 onChange={handleChange}
                 error={errors.name}
+                className={"relative flex flex-col gap-2"}
             />
 
             {/* name input */}
@@ -139,6 +140,7 @@ export default function ContactForm() {
                 placeholderText={"yourname@example.com"}
                 onChange={handleChange}
                 error={errors.email}
+                className={"relative flex flex-col gap-2"}
             />
 
             {/* message input */}
@@ -149,13 +151,14 @@ export default function ContactForm() {
                 onChange={handleChange}
                 value={formData.message}
                 error={errors.message}
+                className={"relative flex flex-col gap-2"}
             />
 
             {/* submit button */}
             <Button
                 children="Start Conversation"
                 type="submit"
-                className="shadow-depth hover:bg-primary/85 mt-4 w-full rounded-lg bg-primary/75 py-3 font-medium text-black hover:shadow-glow-hover"
+                className="hover:bg-primary/85 shadow-depth-softer mt-4 w-full cursor-pointer rounded-lg bg-primary/75 py-3 font-medium text-black transition-all duration-300 hover:scale-[1.005]"
             />
         </form>
     );

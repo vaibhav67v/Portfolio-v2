@@ -20,7 +20,7 @@ export default function About() {
             </div>
 
             {/* technical toolkit container */}
-            <div className="w-70 shadow-depth flex flex-col items-center rounded-xl bg-background p-6 lg:w-auto">
+            <div className="w-70 bg-bg border-border flex flex-col items-center rounded-xl p-6 shadow-depth lg:w-auto">
                 <div className={`mb-6 text-2xl font-bold text-text/95`}>Technical Toolkit</div>
                 <div className="grid grid-cols-3 gap-x-12 gap-y-6 p-2 lg:gap-x-20">
                     <Toolkit text={"HTML"} icon={"html"} />

@@ -11,6 +11,8 @@ import LocationIcon from "../assets/icons/location.svg?react";
 import MailIcon from "../assets/icons/mail.svg?react";
 import OpenMenuIcon from "../assets/icons/open_menu.svg?react";
 import CloseMenuIcon from "../assets/icons/close_menu.svg?react";
+import SunIcon from "../assets/icons/sun.svg?react";
+import MoonIcon from "../assets/icons/moon.svg?react";
 
 const icons = {
     html: HtmlIcon,
@@ -26,6 +28,8 @@ const icons = {
     mail: MailIcon,
     openmenu: OpenMenuIcon,
     closemenu: CloseMenuIcon,
+    sun:SunIcon,
+    moon:MoonIcon,
 };
 
 export default icons;

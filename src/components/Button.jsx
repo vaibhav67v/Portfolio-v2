@@ -23,7 +23,7 @@ export default function Button({
         <button
             type={type}
             onClick={onClick}
-            className={`flex items-center justify-center ${className}`}
+            className={`flex items-center justify-center  ${className}`}
             {...props}
         >
             {children}

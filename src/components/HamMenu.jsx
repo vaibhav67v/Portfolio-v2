@@ -1,6 +1,7 @@
 import icons from "../lib/icons";
 import Button from "./Button";
 import Navlink from "./Navlink";
+import ThemeToggler from "./ThemeToggler";
 
 export default function HamMenu({ onClose }) {
     const CloseMenuIcon = icons.closemenu;
@@ -17,18 +18,23 @@ export default function HamMenu({ onClose }) {
             />
 
             {/* MENU PANEL */}
-            <div className="h-90 w-70 relative z-50 mt-5 flex flex-col items-center gap-10 rounded-xl bg-background p-6 shadow-depth">
-                <div className="flex w-full justify-end">
+            <div className="h-90 w-70 bg-bg-dark relative z-50 mt-5 flex flex-col items-center gap-10 rounded-xl p-6 shadow-depth">
+                <div className="flex w-full items-center justify-end gap-4">
+                    {/* theme toggle button */}
+                    <ThemeToggler className="bg-bg"/>
+                    
+                    {/* close menu icon */}
                     <Button
                         children={<CloseMenuIcon />}
                         type={"button"}
                         onClick={handleClick}
-                        className="h-10 w-10 cursor-pointer rounded-md text-primary/95 shadow-depth lg:hidden"
+                        className="bg-bg border-border h-10 w-10 cursor-pointer rounded-md text-primary/95 lg:hidden"
                         aria-label="Close menu"
                     />
                 </div>
 
-                <ul className="flex flex-col gap-3 text-center text-xl text-text-muted">
+                {/* navigation links */}
+                <ul className="flex flex-col gap-3 text-center text-text-muted">
                     <li>
                         <Navlink
                             href={"hero"}
@@ -64,7 +70,7 @@ export default function HamMenu({ onClose }) {
                     href="resume/Vaibhav_Resume.pdf"
                     download
                     children={"Resume"}
-                    className={`h-10 w-28 cursor-pointer items-center justify-center rounded-md bg-background-light/25 font-bold text-accent/95 shadow-depth transition-colors duration-300`}
+                    className={`bg-bg border-border h-10 w-28 cursor-pointer items-center justify-center rounded-md font-bold text-accent/95 transition-colors duration-300`}
                 />
             </div>
         </div>
