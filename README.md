@@ -51,7 +51,6 @@ A modern developer portfolio built with React, showcasing projects, skills, and 
 ## Future Improvements
 
 - Add projects to the Projects section
-- Implement dark/light mode toggle
 - Backend integration (Node.js / Express)
 - Enhance animations and micro-interactions
 
