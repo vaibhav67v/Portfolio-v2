@@ -17,14 +17,14 @@ export default function Projects() {
                 <p className={`mt-2 ${typography.body}`}>
                     Empty for now… but not for long. <br />
                     I don’t rush projects — I build them right. <br />
-                    In the meantime, you can check out some of my mini projects{" "}
+                    In the meantime, you can check out some of my{" "}
                     <a
                         target="_blank"
                         rel="noopener noreferrer"
                         href="https://github.com/vaibhav67v/WebDev-Mini-Projects"
                         className="border-b border-accent font-semibold text-accent hover:border-transparent"
                     >
-                        here
+                        mini projects
                     </a>
                     .
                 </p>
